@@ -259,8 +259,9 @@ function blog() {
                   </div>
                   {/* footer copyright */}
                   <div className="footer-copyright text-center bg-light-white-2 pt-25 pb-25">
-                    <span>
-                      © 2024 All Rights Reserved by Manas Singh
+                  <span>
+                      © {new Date().getFullYear()} All Rights Reserved by Manas
+                      Singh
                       <a target="_blank" rel="noopener noreferrer" href="#"></a>
                     </span>
                   </div>

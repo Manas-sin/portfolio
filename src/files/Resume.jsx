@@ -42,18 +42,18 @@ function resume() {
                           {
                             children: (
                               <div className="timeline-item-content">
-                                <b> Midas Consulting </b> <br />
-                                <strong className="m-2">Web Developer</strong>(
-                                <i>May-16-2024 at present</i>)
+                                <b> Zupee </b> <br />
+                                <strong className="m-2">Software Engineer(Backend)</strong>(
+                                <i>Jun 2025 - October2025 </i>)
                               </div>
                             ),
                           },
                           {
                             children: (
                               <div className="timeline-item-content">
-                                <b> Career guide </b> <br />
-                                <strong className="m-2">Web Developer</strong>(
-                                <i> Jan 2023- March 2024</i>)
+                                <b> Midas Consulting </b> <br />
+                                <strong className="m-2">Software Engineer</strong>(
+                                <i> Apr 2024 - Jun 2025</i>)
                               </div>
                             ),
                           },
@@ -64,7 +64,7 @@ function resume() {
                                 <strong className="m-2">
                                   Web Developer intern
                                 </strong>
-                                (<i> March 2021– June 2021</i>)
+                                (<i> March 2021 – June 2022</i>)
                               </div>
                             ),
                           },
@@ -218,9 +218,10 @@ function resume() {
                       </div>
                     </div>
                   </div>
-                  <div className="footer-copyright text-center bg-light-white-2 pt-25 pb-25">
+                  <div className="copyright text-center bg-light-white-2 pt-25 pb-25">
                     <span>
-                      © 2024 All Rights Reserved by Manas Singh
+                      © {new Date().getFullYear()} All Rights Reserved by Manas
+                      Singh
                       <a target="_blank" rel="noopener noreferrer" href="#"></a>
                     </span>
                   </div>
