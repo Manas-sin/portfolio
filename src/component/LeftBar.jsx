@@ -104,7 +104,7 @@ function LeftBar() {
             {/* cv button */}
             <Stack className="">
               <a
-                href="./cv/ManasResumel.pdf"
+                href="./cv/ManasResumeI.pdf"
                 download="Resume-Manas.pdf"
                 style={{
                   textDecoration: "italic",
