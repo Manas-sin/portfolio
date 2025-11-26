@@ -7,10 +7,7 @@ import RightBar from "../component/RightBar";
 function resume() {
   return (
     <React.Fragment>
-      <div
-        className="page-wrapper home-1"
-        style={{ backgroundImage: "url('/img/bg/page-bg-1.jpg')" }}
-      >
+      <div className="page-wrapper home-1">
         <Head />
         <div>
           <div className="container z-index-3">

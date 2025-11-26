@@ -51,7 +51,7 @@ function Contact() {
         from_email: email,
         message: messages,
       });
-      
+
       // Handle successful response
       if (response.status === 200) {
         messageApi.success('Message sent successfully!');
@@ -69,7 +69,7 @@ function Contact() {
 
   return (
     <React.Fragment>
-      <div className="page-wrapper home-1" style={{ backgroundImage: "url('/img/bg/page-bg-1.jpg')" }}>
+      <div className="page-wrapper home-1">
         <Head />
         <div>
           <div className="container z-index-3">
@@ -127,7 +127,7 @@ function Contact() {
                     </div>
                   </div>
                   <div className="footer-copyright text-center bg-light-white-2 pt-25 pb-25">
-                  <span>
+                    <span>
                       © {new Date().getFullYear()} All Rights Reserved by Manas
                       Singh
                       <a target="_blank" rel="noopener noreferrer" href="#"></a>

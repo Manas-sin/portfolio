@@ -3,6 +3,8 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "../public/css/index.css";
 import BasicSpeedDial from "./component/BasicSpeedDial"; // Import the SpeedDial component
 import Bottom from "./component/Bottom";
+import CustomCursor from "./component/CustomCursor";
+import ThreeBackground from "./component/ThreeBackground";
 import About from "./files/About";
 import Contact from "./files/Contact";
 import Project from "./files/Project";
@@ -29,6 +31,8 @@ function App() {
         </div>
       ) : (
         <>
+          <CustomCursor />
+          <ThreeBackground />
           <Bottom />
           <Routes>
             <Route path="/" element={<About />} />

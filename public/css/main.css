@@ -5039,16 +5039,18 @@ body.dark-theme .bostami-header-area {
 }
 
 
+
 .h2-typewriter {
   font-family: 'Source Code Pro', monospace;
   font-size: 48px; /* Default size */
   color: rgb(0, 0, 0);
-  overflow: hidden; /* Ensures no overflow */
-  white-space: nowrap; /* Keeps text on one line */
+  overflow: hidden;
+  white-space: nowrap; /* Keeps text on one line during animation */
   border-right: solid 3px rgba(3, 145, 3, 0.75); /* Cursor effect */
-  width: 0; /* Start with no width */
-  animation: animated-text-h2 6s steps(40, end) 1s infinite, /* Typing animation */
+  max-width: fit-content; /* Allow natural width */
+  animation: animated-text-h2 4s steps(30, end) 1s 1 normal both, /* Typing animation - runs once */
              animated-cursor-h2 500ms steps(50, end) infinite; /* Cursor blink animation */
+  display: inline-block; /* Prevent full-width stretching */
 }
 
 @keyframes animated-text-h2 {
@@ -5073,31 +5075,31 @@ body.dark-theme .bostami-header-area {
 /* Smartphones, iPhone, portrait 480x320 phones */
 @media (min-width: 320px) {
   .h2-typewriter {
-    font-size: 5.5vw; /* Slightly smaller font for small devices */
+    font-size: 1.2rem; /* Better scaling for small devices */
   }
 }
 /* Portrait e-readers, smaller tablets @ 600 or @ 640 wide */
 @media (min-width: 481px) {
   .h2-typewriter {
-    font-size: 5vw;
+    font-size: 1.5rem;
   }
 }
 /* Portrait tablets, iPad, landscape e-readers, landscape 800x480 phones */
 @media (min-width: 641px) {
   .h2-typewriter {
-    font-size: 4.5vw;
+    font-size: 2rem;
   }
 }
 /* Tablet, landscape iPad, lo-res laptops and desktops */
 @media (min-width: 961px) {
   .h2-typewriter {
-    font-size: 4vw;
+    font-size: 2.5rem;
   }
 }
 /* Big landscape tablets, laptops, and desktops */
 @media (min-width: 1025px) {
   .h2-typewriter {
-    font-size: 3.5vw;
+    font-size: 3rem;
   }
 }
 /* Extra-large desktops */

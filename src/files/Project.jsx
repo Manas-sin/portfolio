@@ -8,10 +8,7 @@ const { Meta } = Card;
 function blog() {
   return (
     <React.Fragment>
-      <div
-        className="page-wrapper home-1 "
-        style={{ backgroundImage: "url('/img/bg/page-bg-1.jpg')" }}
-      >
+      <div className="page-wrapper home-1">
         <Head />
         <div>
           <div className="container z-index-3">
@@ -253,13 +250,13 @@ function blog() {
                             </Card>
                           </div>
                         </div>
-                        
+
                       </div>
                     </div>
                   </div>
                   {/* footer copyright */}
                   <div className="footer-copyright text-center bg-light-white-2 pt-25 pb-25">
-                  <span>
+                    <span>
                       © {new Date().getFullYear()} All Rights Reserved by Manas
                       Singh
                       <a target="_blank" rel="noopener noreferrer" href="#"></a>
