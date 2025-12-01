@@ -1,0 +1,115 @@
+\documentclass{resume}
+
+\usepackage[left=0.4in, top=0.2in, right=0.4in, bottom=0.2in]{geometry}
+
+% ---------- FONT SETUP ----------
+\usepackage[T1]{fontenc}
+\usepackage{tgpagella}
+\usepackage{microtype}
+\renewcommand{\familydefault}{\rmdefault}
+
+% ---------- UTILITIES ----------
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% ---------- HEADER ----------
+\name{{\protect\NoCaseChange{\fontfamily{qtm}\selectfont\bfseries\fontsize{20pt}{24pt}\selectfont Manas Singh}}}
+
+\address{
+    \vspace{0pt}
+    \href{mailto:manassingh910@gmail.com}{\textbf{manassingh910@gmail.com}} \quad $\vert$ \quad
+    \href{https://www.linkedin.com/in/manassinghcoder/}{\textbf{linkedin.com/in/manassinghcoder}} \quad $\vert$ \quad
+    \textbf{+91 8130577549}
+}
+
+\begin{document}
+\linespread{0.85}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-1em}
+\begin{rSection}{Work EXPERIENCE}
+
+\textbf{Zupee} — Backend Engineer (SDE-I) \hfill \textit{Gurugram, India} \quad Jun 2025 -- Present
+\begin{itemize}
+    \itemsep -5pt {}
+    \item Built a scalable \textbf{rewards system} that converted unpaid users into paid cohorts, improving revenue by \textbf{1\%} and contributing to a \textbf{~3–4\% uplift} in monthly Gross Gaming Revenue (GGR). Designed segment-based routing with \textbf{AWS SQS/SNS} to smooth traffic spikes and reduce API load by \textbf{18\%}.
+\item Designed the in-game \textbf{real-time chat system} for Ludo, supporting \textbf{250K+ daily active players}. Implemented room \& cross-room messaging using \textbf{WebSockets}, \textbf{Socket.io}, \textbf{Redis Pub/Sub}, \textbf{Kafka}, and \textbf{SQS}; added \textbf{3-day TTL} expiry to keep storage costs controlled by \textbf{22\%}.
+
+    
+    \item Improved high-traffic gaming microservices by optimizing \textbf{Kafka} pipelines, reducing message latency by \textbf{35\%}, and improving API throughput by \textbf{28\%} using connection pooling, load-shedding, and cache layering. Hardened authentication flows, lowering login failures by \textbf{40\%}.
+    
+    \item Optimized backend \textbf{order + story generation} for Ludo winners and built meme-based viral widgets, increasing unpaid-to-paid engagement and driving a \textbf{0.2\% lift in organic installs} (~\textbf{35K+ new installs/month}).
+\end{itemize}
+
+\textbf{Midas Consulting} — Software Developer \hfill \textit{Noida, India} \quad May 2024 -- Jun 2025
+\begin{itemize}
+    \itemsep -5pt {}
+    \item Built a \textbf{multi-tenant microservices backend} using \textbf{Java (Spring Boot)} and \textbf{GraphQL}, implementing tenant isolation, \textbf{JWT authentication}, \textbf{OAuth}-based single sign-on, \textbf{Cloudflare} request filtering, and custom authorization middleware.
+    \item Developed scalable \textbf{Flask APIs} and \textbf{Python} ingestion pipelines; integrated \textbf{PostgreSQL} and \textbf{Elasticsearch} to power a LinkedIn-style \textbf{resume search engine} with fast, relevance-ranked results.
+    \item Built and optimized frontend features using \textbf{React.js}, \textbf{Next.js}, \textbf{TypeScript}, and \textbf{Framer Motion}; improved UI performance through code splitting, caching, and render optimization.
+    \item Deployed and orchestrated services on \textbf{AWS EC2} and \textbf{Kubernetes}, leveraging autoscaling, service discovery, and \textbf{CloudWatch} monitoring for production reliability.   
+\end{itemize}
+
+\textbf{Ducat India} — Engineering Trainee \hfill \textit{Noida, India} \quad Nov 2022 -- May 2024
+\begin{itemize}
+    \itemsep -5pt {}
+    \item Developed backend modules with \textbf{Java}, \textbf{Spring Boot}, and \textbf{MySQL} while applying \textbf{DSA}, \textbf{multithreading}, and \textbf{system design} principles to build reliable \textbf{REST APIs}.
+\end{itemize}
+
+\textbf{Webloop Infotech LLP} — Backend Developer \hfill \textit{Gurugram, India} \quad Mar 2021 -- Apr 2022
+\begin{itemize}
+    \itemsep -5pt {}
+    \item Developed high-performance \textbf{REST APIs} with \textbf{Node.js/Express}, optimized DB queries, and implemented \textbf{Redis} caching to achieve a 45\% throughput gain and 99.9\% uptime.
+    \item Containerized backend workloads using \textbf{Docker}, deployed and managed them on \textbf{Kubernetes}, and automated CI/CD with \textbf{GitHub Actions}, cutting deployment time by 55\%.
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+%----------------------------------------------------------------------------------------
+\vspace{-1em}
+\begin{rSection}{TECHNICAL SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+Languages & \textbf{Java}, \textbf{Python}, \textbf{JavaScript}, \textbf{TypeScript}, \textbf{SQL}, Shell \\[0pt]
+Backend & \textbf{Spring Boot}, \textbf{Node.js}, \textbf{Express.js}, \textbf{FastAPI}, \textbf{GraphQL}, \textbf{REST}, \textbf{WebSockets} \\[0pt]
+System Design & \textbf{Distributed Systems}, \textbf{Microservices}, \textbf{Caching}, \textbf{Load Balancing}, \textbf{Consistency Models} \\[0pt]
+Databases & \textbf{PostgreSQL}, \textbf{MySQL}, \textbf{MongoDB}, \textbf{Redis}, \textbf{Elasticsearch}, \textbf{Aerospike} \\[0pt]
+Cloud \& DevOps & \textbf{AWS (EC2, S3, Lambda)}, \textbf{Kubernetes}, \textbf{Docker}, \textbf{Kafka}, \textbf{SQS}, \textbf{CI/CD} \\[0pt]
+Observability & \textbf{New Relic}, \textbf{CloudWatch}, \textbf{Coralogix}, \textbf{Distributed Tracing} \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\vspace{-1em}
+\begin{rSection}{PROJECTS}
+\vspace{-0.8em}
+
+\item \textbf{Resume Parser \& Boolean Search} — Distributed system using \textbf{Node.js} microservices, \textbf{RabbitMQ}, and \textbf{MongoDB}; implemented Boolean search using \textbf{Java}/\textbf{Python} with in-memory indexing, scaling to \textbf{10K+} documents/day. 
+\href{https://portal.midastech.org/auth/login}{\textit{(Try it)}}
+
+\item \textbf{Chesspawn (Real-Time Game Server)} — Engineered a multiplayer chess platform using \textbf{Next.js}, \textbf{React.js}, and \textbf{WebSockets} (\textbf{Socket.io}); implemented \textbf{OAuth} for one-tap login and \textbf{Redis Pub/Sub} for scalable real-time event broadcasting.
+\href{https://chesspawn-com.vercel.app/signin/signin}{\textit{(Play here)}}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-1em}
+\begin{rSection}{EDUCATION}
+
+{\bf Master of Computer Application (MCA)}, Amity University \hfill 2023 -- 2025 \\[0pt]
+{\bf Bachelor of Computer Application (BCA)}, Guru Gobind Singh Indraprastha University (GGSIPU) \hfill 2018 -- 2021 
+
+\end{rSection}
+
+
+\end{document}

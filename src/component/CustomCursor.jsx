@@ -6,6 +6,20 @@ const CustomCursor = () => {
     const cursorDotRef = useRef(null);
     const mousePos = useRef({ x: 0, y: 0 });
     const [isDarkTheme, setIsDarkTheme] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    // Check if device is mobile/touch-based
+    useEffect(() => {
+        const checkMobile = () => {
+            const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+            setIsMobile(isTouchDevice);
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     useEffect(() => {
         // Detect theme
@@ -25,6 +39,11 @@ const CustomCursor = () => {
 
         return () => observer.disconnect();
     }, []);
+
+    // Don't render cursor on mobile devices
+    if (isMobile) {
+        return null;
+    }
 
     useEffect(() => {
         const cursor = cursorRef.current;
@@ -56,7 +75,7 @@ const CustomCursor = () => {
         };
 
         // Hover detection for interactive elements
-        const handleMouseEnter = () => {
+        const handleMouseEnter = (e) => {
             // Expand and rotate on hover with bubble effect
             gsap.to(cursor, {
                 scale: 2.5,
@@ -74,7 +93,7 @@ const CustomCursor = () => {
             });
         };
 
-        const handleMouseLeave = () => {
+        const handleMouseLeave = (e) => {
             gsap.to(cursor, {
                 scale: 1,
                 rotation: 0,

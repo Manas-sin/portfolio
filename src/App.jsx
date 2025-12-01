@@ -32,7 +32,7 @@ function App() {
       ) : (
         <>
           <CustomCursor />
-          <ThreeBackground />
+          {/* <ThreeBackground /> */}
           <Bottom />
           <Routes>
             <Route path="/" element={<About />} />
